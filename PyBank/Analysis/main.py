@@ -44,11 +44,12 @@ with open(filepath, newline= '') as csvfile:
             decreaseIndex = i
 
     meanDifferences = round(mean(differences),3)
+    print("This is average differences:", meanDifferences)
     greatestIncreaseDate = dates[increaseIndex]
     greatestDecreaseDate = dates[decreaseIndex]
 
 #create text file 
-f = open("FinancialAnalysis.txt", 'a')
+f = open("FinancialAnalysis.txt", 'w')
 f.write("Financial Analysis\n")
 f.write("----------------------------\n")
 f.write(f"Total Months: {totalMonths}\n")
