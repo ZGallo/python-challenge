@@ -25,7 +25,7 @@ with open(filepath, 'r') as dataset:
     candidatesList = [candidate for candidate in candidateDict.keys()]
 
 # Creating export file
-export = open("ElectionResults.txt", "a")
+export = open("ElectionResults.txt", "w")
 export.write("Election Results\n")
 export.write("-------------------------\n")
 export.write(f"Total Votes: {totalVotes}\n")
