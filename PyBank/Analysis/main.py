@@ -44,7 +44,6 @@ with open(filepath, newline= '') as csvfile:
             decreaseIndex = i
 
     meanDifferences = round(mean(differences),3)
-    print("This is average differences:", meanDifferences)
     greatestIncreaseDate = dates[increaseIndex]
     greatestDecreaseDate = dates[decreaseIndex]
 
